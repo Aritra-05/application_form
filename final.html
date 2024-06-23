@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container" id="maindiv">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label for="sid">Sponsor ID:</label>
+                            <input type="text" class="form-control" id="sid" name="sid" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label for="sname">Sponsor Name:</label>
+                            <input type="text" class="form-control" id="sname" name="sname" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="mid">Member ID:</label>
+                        <input type="text" class="form-control" id="mid" name="mid" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="fname">Full Name:</label>
+                        <input type="text" class="form-control" id="fname" name="fname" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="sgen">Gender:</label>
+                        <input type="text" class="form-control" id="sgen" name="sgen" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="text" class="form-control" id="dob" name="dob" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="mnum">Mobile Number:</label>
+                        <input type="text" class="form-control" id="mnum" name="mnum" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="eid">Email ID:</label>
+                        <input type="email" class="form-control" id="eid" name="eid" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="pan">PAN Number:</label>
+                        <input type="text" class="form-control" id="pan" name="pan" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="fname">Father/Husband Name:</label>
+                        <input type="text" class="form-control" id="hname" name="hname" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="ano">Aadhar Number:</label>
+                        <input type="text" class="form-control" id="ano" name="ano" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="bname">Bank Name:</label>
+                        <input type="text" class="form-control" id="bname" name="bname" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="ifsc">IFSC Code:</label>
+                        <input type="text" class="form-control" id="ifsc" name="ifsc" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="anum">Account Number:</label>
+                        <input type="text" class="form-control" id="anum" name="anum" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="canum">Confirm Number:</label>
+                        <input type="text" class="form-control" id="canum" name="canum" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="ahol">Account holder Name:</label>
+                        <input type="text" class="form-control" id="ahol" name="ahol" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="coun">Country:</label>
+                        <input type="text" class="form-control" id="coun" name="coun" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="state">State:</label>
+                        <input type="text" class="form-control" id="state" name="state" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="dist">District:</label>
+                        <input type="text" class="form-control" id="dist" name="dist" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="city">City:</label>
+                        <input type="text" class="form-control" id="city" name="city" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="addr">Address:</label>
+                    <input type="text" class="form-control" id="addr" name="addr" readonly>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="landm">Landmark:</label>
+                        <input type="text" class="form-control" id="landm" name="landm" readonly>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pcode">Postal Code:</label>
+                        <input type="text" class="form-control" id="pcode" name="pcode" readonly>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" id="downloadHtmlAsPdf">Download as PDF</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- html2pdf Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.0/html2pdf.bundle.min.js"></script>
+
+
+    <script>
+        // Get the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+    
+        // Set values for each input field
+        document.getElementById('sid').value = urlParams.get('sid');
+        document.getElementById('sname').value = urlParams.get('sname');
+        document.getElementById('mid').value = urlParams.get('mid');
+        document.getElementById('fname').value = urlParams.get('fname');
+        document.getElementById('sgen').value = urlParams.get('sgen');
+        document.getElementById('dob').value = urlParams.get('dob');
+        document.getElementById('mnum').value = urlParams.get('mnum');
+        document.getElementById('eid').value = urlParams.get('eid');
+        document.getElementById('pan').value = urlParams.get('pan');
+        document.getElementById('hname').value = urlParams.get('hname');
+        document.getElementById('ano').value = urlParams.get('ano');
+        document.getElementById('bname').value = urlParams.get('bname');
+        document.getElementById('ifsc').value = urlParams.get('ifsc');
+        document.getElementById('anum').value = urlParams.get('anum');
+        document.getElementById('canum').value = urlParams.get('canum');
+        document.getElementById('ahol').value = urlParams.get('ahol');
+        document.getElementById('coun').value = urlParams.get('coun');
+        document.getElementById('state').value = urlParams.get('state');
+        document.getElementById('dist').value = urlParams.get('dist');
+        document.getElementById('city').value = urlParams.get('city');
+        document.getElementById('addr').value = urlParams.get('addr');
+        document.getElementById('landm').value = urlParams.get('landm');
+        document.getElementById('pcode').value = urlParams.get('pcode');
+
+        document.getElementById('downloadHtmlAsPdf').addEventListener('click', function () {
+            const element = document.getElementById("maindiv");
+            html2pdf().from(element).save('user_information.pdf');
+        });
+
+    </script>
+    
+</body>
+
+</html>

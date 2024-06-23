@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body class="bg-warning-subtle position-relative  ">
+    <div class="container position-absolute " style="display: block;" id="container1">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="p-3 m-3 "><img src="logo.jpg" class=" rounded img-fluid "
+                        style="width: 150px; height: 80px;"></h1>
+                <h1 class="reg mx-5 p-3  rounded border-2 text-bg-info">Registration</h1>
+
+                <div class="container p-5 ">
+                    <div class="row border rounded  border-black  ">
+                        <div class="col-md-12 rounded bg-info-subtle ">
+
+                            <h1 class="bg-success p-2 mt-2 rounded ">Sponsor Details</h1>
+
+                            <p>Sponsor Id*</p>
+                            <input type="text" class="mb-2 border-2 form-control" id="sid">
+
+                            <p>Sponsor name*</p>
+                            <input type="text" class="mb-2 border-2  form-control" id="sname">
+
+                            <p>Position* <select name="Position" class="form-control" id="sposition">
+                                    <option value="Engineer">Engineer</option>
+                                    <option value="Doctor">Doctor</option>
+                                    <option value="R&D">R&D</option>
+                                    <option value="Business Analytics">Business Analytics</option>
+                                    <option value="Accountant">Accountant</option>
+                                </select></p>
+                        </div>
+                    </div>
+
+                    <label id="ckb1">
+                        <input type="checkbox" id="myCheckbox1"> Check your all details before submit.
+                    </label>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-primary  mt-2 mb-5 " id="btn1" disabled >SUBMIT</button>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-md-end align-items-md-end ">
+                            <button class="btn btn-primary  mt-2 mb-5" id="next1" style="display: none;" >NEXT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container position-absolute m-5 " style="display: none;" id="container2">
+        <div class="row ">
+            <div class="col-md-12">
+                <h1 class="bg-success p-2 mt-2 rounded ">Personal Details</h1>
+
+                <p>Member Id. *</p>
+                <input type="text" class="form-control  mb-2 border-2 " id="mid" placeholder="Member Code">
+
+                <p>Full Name. *</p>
+                <input type="text" class="form-control mb-2 border-2 " id="fname" placeholder="First Name">
+
+                <p>Select Gender*</p>
+                <select name="Gender" id="Gender" class="form-control mb-2 border-2 " id="sgen">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+                <p>Date of Birth*</p>
+                <input type="date" class="form-control mb-2 border-2 " id="dob">
+
+                <p>Mobile Number. *</p>
+                <input type="text" class="form-control mb-2 border-2 " id="mnum" placeholder="Mobile Number">
+
+                <p>Email ID</p>
+                <input type="text" class="form-control mb-2 border-2 " id="eid" placeholder="Email address">
+
+                <p>PAN No *</p>
+                <input type="text" class="form-control mb-2 border-2 " id="pan" placeholder="PAN Number">
+
+                <p>Father/Husband Name</p>
+                <input type="text" class="form-control mb-2 border-2 " id="hname" placeholder="Father Name">
+
+                <p>Adhar Card No(Optional)*</p>
+                <input type="text" class="form-control mb-2 border-2 " id="ano" placeholder="Adhar Card No">
+
+            </div>
+
+            <label id="ckb2">
+                <input type="checkbox" id="myCheckbox2"> Check your all details before submit.
+            </label>
+
+            <div class="row ">
+                <div class="col-md-6">
+                    <button class="btn btn-primary  mt-2 mb-5 " id="btn2" disabled >SUBMIT</button>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end align-items-md-end  ">
+                    <button class="btn btn-primary  mt-2 mb-5" id="btn3">BACK</button>
+                </div>
+                <div class="col-md-12 d-flex justify-content-md-end align-items-md-end">
+                    <button class="btn btn-primary  mt-2 mb-5" id="next2" style="display: none;" >NEXT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container position-absolute m-5 " style="display: none;" id="container3">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="bg-success p-2 mt-2 rounded ">Bank Details</h1>
+
+                <p>Bank Name*</p>
+                <input type="text" class="form-control mb-2 border-2 " id="bname">
+
+                <p>IFSC Code*</p>
+                <input type="text" class="form-control mb-2 border-2 " id="ifsc">
+
+                <p>Account Number*</p>
+                <input type="text" class="form-control mb-2 border-2 " id="anum">
+
+                <p>Confirm Account Number*</p>
+                <input type="text" class="form-control mb-2 border-2 " id="canum">
+
+                <p>Name of Account Holder*</p>
+                <input type="text" class="form-control mb-2 border-2 " id="ahol">
+
+            </div>
+        </div>
+
+        <label id="ckb3">
+            <input type="checkbox" id="myCheckbox3"> Check your all details before submit.
+        </label>
+
+        <div class="row">
+            <div class="col-md-6 ">
+                <button class="btn btn-primary  mt-2 mb-5 " id="btn4" disabled >SUBMIT</button>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-end align-items-md-end">
+                <button class="btn btn-primary  mt-2 mb-5" id="btn5">BACK</button>
+            </div>
+            <div class="col-md-12 d-flex justify-content-md-end align-items-md-end ">
+                <button class="btn btn-primary  mt-2 mb-5" id="next3" style="display: none;" >NEXT</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container position-absolute m-5" style="display: none;" id="container4">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="subclass bg-success p-2 mt-2 rounded ">Address Details</h1>
+
+                <p>Country</p>
+                <input type="text" class="form-control mb-2 border-2 " id="coun">
+
+                <p>State</p>
+                <input type="text" class="form-control mb-2 border-2 " id="state">
+
+                <p>District</p>
+                <input type="text" class="form-control mb-2 border-2 " id="dist">
+
+                <p>Enter City/Village</p>
+                <input type="text" class="form-control mb-2 border-2 " id="city">
+
+                <p>Address</p>
+                <input type="text" class="form-control mb-2 border-2 " id="addr">
+
+                <p>Landmark</p>
+                <input type="text" class="form-control mb-2 border-2 " id="landm">
+
+                <p>Pin Code</p>
+                <input type="text" class="form-control mb-2 border-2 " id="pcode">
+
+            </div>
+        </div>
+
+        <label id="ckb4">
+            <input type="checkbox" id="myCheckbox4"> Check your all details before submit.
+        </label>
+
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-primary  mt-2 mb-5 " id="btn6" disabled >SUBMIT</button>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-end align-items-md-end ">
+                <button class="btn btn-primary  mt-2 mb-5" id="btn7">BACK</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="success" style="display: none;">
+        You have submitted your form successfully!
+    </div>
+
+    <!-- <div class="container position-absolute m-5" style="display: none;" id="container4">
+    </div> -->
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
